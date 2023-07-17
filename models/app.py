@@ -15,11 +15,11 @@ def get_ept_infos():
     data = request.get_json()
     question = data['question']
 
-    test = chatbot_model.getEptInfos(question)
+    response = chatbot_model.getEptInfos(question)
 
     response = f"your question is:{question}"
 
-    return jsonify(test)
+    return jsonify(response)
 
 
 if __name__ == '__main__':
