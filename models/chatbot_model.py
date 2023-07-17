@@ -2,6 +2,7 @@ from llama_index import StorageContext, load_index_from_storage
 import os
 import openai
 from dotenv import load_dotenv
+from unidecode import unidecode
 
 # Load environment variables from .env file
 load_dotenv()
@@ -24,7 +25,7 @@ def getEptInfos(question):
     try:
         response = new_query_engine.query(question)
         print(5)
-        return response.response
+        return unidecode(response.response).replace("\n", "")#encode().decode("unicode_escape")
     except Exception as e:
         print(f"An error occurred: {e}")
         return str(e)
