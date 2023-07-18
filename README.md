@@ -94,6 +94,8 @@ To get response with Vue.js, run this:
 Réponse attendue quand la clé ne fonctionne plus:
 ![App Screenshot](/screenshots/keyBlocked.png?raw=true)
 
+Réponse attendue quand la clé ne fonctionne plus:
+![App Screenshot](/screenshots/deployed.png?raw=true)
 
 ## Tech Stack
 
