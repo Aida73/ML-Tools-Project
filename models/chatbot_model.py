@@ -28,6 +28,6 @@ def getEptInfos(question):
         return unidecode(response.response).replace("\n", "")#encode().decode("unicode_escape")
     except Exception as e:
         print(f"An error occurred: {e}")
-        return str(e)
+        return "Il semble y avoir un probème, veuillez réessayer plutard"
 
 

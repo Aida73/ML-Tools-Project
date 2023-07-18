@@ -17,8 +17,6 @@ def get_ept_infos():
 
     response = chatbot_model.getEptInfos(question)
 
-    response = f"your question is:{question}"
-
     return jsonify(response)
 
 
