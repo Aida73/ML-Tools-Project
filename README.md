@@ -68,3 +68,17 @@ Réponse attendue quand la clé ne fonctionne plus:
 
 **Backend:** Flask
 
+
+
+## Data collection
+
+The model is training by scrapping the website `www.ept.sn`
+
+To get the data, run the extract.py script:
+
+```
+cd data_collection
+python extract_data.py
+
+```
+txt files with be generated and saved into knowledge folder
