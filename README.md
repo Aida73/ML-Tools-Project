@@ -61,6 +61,34 @@ Start the server
   python app.py
 ```
 
+## Deployment
+
+This project is deployed on PythonAnywhere. 
+
+To get response from the API: http://da73.pythonanywhere.com
+
+To get response with Vue.js, run this:
+
+```bash
+  url: http://da73.pythonanywhere.com/eptinfos
+
+  methods: {
+    async postData(question) {
+      try {
+        const data = {
+          question: question
+        };
+        const response = await axios.post('url', data);
+        console.log(response.data);
+        // Handle the response data or perform other operations
+      }
+      catch (error) {
+        console.error(error);
+        // Handle the error
+      }
+    }
+  }
+```
 
 ## Screenshots
 Réponse attendue quand la clé ne fonctionne plus:
