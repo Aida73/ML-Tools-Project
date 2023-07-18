@@ -1,5 +1,5 @@
 
-# Project Title
+# ML-Tools-Project
 
 The idea is to set up a personalized conversational agent to answer any questions about the Ecole Polytechnique de Thiès using gpt Index. The aim of this project is to collect and prepare data, implement embedding techniques and write prompts to personalize chatgpt. For this project we use: LlamaIndex (formerly GPT Index) which is a data framework for LLM applications to ingest, structure, and access private or domain-specific data.
 
