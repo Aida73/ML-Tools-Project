@@ -7,6 +7,7 @@ The idea is to set up a personalized conversational agent to answer any question
 The aim of this project is to collect and prepare data, implement embedding techniques and write prompts to personalize chatgpt.
 For this project we use: LlamaIndex (formerly GPT Index) which is a data framework for LLM applications to ingest, structure, and access private or domain-specific data.
 
+Website link : http://chatbotept.s3-website.us-east-2.amazonaws.com/
 
 
 
@@ -62,35 +63,21 @@ Start the server
 ```bash
   python app.py
 ```
+You will get a local link to try the API.
 
+
+If you want to interact with the chatbot directly on your computer, without using the aws link :
+- dowload the code available on the web branch of this repository
+- open the index.html file directly in your browser.
+
+  
 ## Deployment
 
 This project is deployed on PythonAnywhere. 
 
 To get response from the API: http://da73.pythonanywhere.com
 
-To get response with Vue.js, run this:
-
-```bash
-  url: http://da73.pythonanywhere.com/eptinfos
-
-  methods: {
-    async postData(question) {
-      try {
-        const data = {
-          question: question
-        };
-        const response = await axios.post('url', data);
-        console.log(response.data);
-        // Handle the response data or perform other operations
-      }
-      catch (error) {
-        console.error(error);
-        // Handle the error
-      }
-    }
-  }
-```
+The chatbot web page is deployed on aws : http://chatbotept.s3-website.us-east-2.amazonaws.com/
 
 ## Screenshots
 Réponse attendue quand la clé ne fonctionne plus:
@@ -104,7 +91,6 @@ Réponse attendue quand la clé ne fonctionne plus:
 **Backend:** Flask
 
 **Web:** HTML, JavaScript, CSS
-
 
 
 ## Data collection
