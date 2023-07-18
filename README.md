@@ -60,7 +60,7 @@ Start the server
 
 
 ## Screenshots
-
+Réponse attendue quand la clé ne fonctionne plus:
 ![App Screenshot](/screenshots/keyBlocked.png?raw=true)
 
 
