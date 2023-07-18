@@ -63,7 +63,6 @@ Start the server
 
 ![App Screenshot](/screenshots/keyBlocked.png?raw=true)
 
-![App Screenshot](/screenshots/keyBlocked.png?raw=true)
 
 ## Tech Stack
 
