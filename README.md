@@ -102,6 +102,7 @@ Réponse attendue quand la clé ne fonctionne plus:
 ## Tech Stack
 
 **Backend:** Flask
+**Web:** HTML, JavaScript, CSS
 
 
 
