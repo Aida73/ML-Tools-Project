@@ -1,8 +1,15 @@
 from llama_index import StorageContext, load_index_from_storage
 import os
+import sys
 import openai
 from dotenv import load_dotenv
 from unidecode import unidecode
+
+# Add the parent directory of the current file to the module search path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -25,9 +32,10 @@ def getEptInfos(question):
     try:
         response = new_query_engine.query(question)
         print(5)
-        return unidecode(response.response).replace("\n", "")#encode().decode("unicode_escape")
+        return unidecode(response.response).replace("\n", "")
     except Exception as e:
         print(f"An error occurred: {e}")
-        return "Il semble y avoir un probème, veuillez réessayer plutard. Si le problème persiste, veuillez contacter le service technique à l'adresse suivante: tech@ept.sn"
+        texte = "Il semble y avoir un probeme, veuillez réessayer plutard. Si le probleme persiste, veuillez contacter le service technique à l'adresse suivante: tech@ept.sn"
+        return unidecode(texte)
 
 
